@@ -1,0 +1,376 @@
+@-ms-viewport { /* IE10+ */
+  width:device-width; 
+}
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+   width: device-width;
+ }
+@-o-viewport {
+   width: device-width;
+ } 
+@viewport{
+  width:device-width; 
+}
+/*   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark  html5doctor.com/html-5-reset-stylesheet/*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+article, aside, figure, footer, header,
+hgroup, nav, section { display:block; }
+
+*{
+-webkit-font-smoothing: antialiased;	
+-moz-font-smoothing:antialiased;
+-o-font-smoothing:antialiased;
+font-smoothing:antialiased;
+-moz-box-sizing:border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+/* END RESET CSS */
+
+img{
+  max-width:100%;
+  height:auto;
+  width:auto\9; /*IE8*/
+}    
+
+html{
+  overflow-x:hidden;
+  font:100%/1.5em helvetica,arial,sans-serif;
+  font-weight:normal;
+  min-height:100%;
+  position:relative;
+  padding-bottom:20em;  
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: green;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body{
+  font-size:1.0em; /*16px*/
+  line-height: 1.5em;  /*24px*/
+  font-family: sans-serif;
+}
+
+
+/* HELPER CLASSES */
+
+.hidetxt{
+  font:0/0 a;
+  text-shadow:none;
+  color:transparent;
+  background-color:transparent;
+  border:0;		
+}
+
+.last{
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* END HELPER CLASSES */
+
+
+/*====== BASE STYLES ======*/
+.row{
+  float:left;
+  clear:both;
+  width:100%;
+  margin-bottom:0.5em;
+}
+
+.container{
+  width:90%;
+  margin: 0 auto;
+}
+
+.container .columns{
+  float:left;
+  margin:0 0 1em ;
+  padding-right:1em; 
+  padding-left:1em;
+}
+
+
+.container .columns1,
+.container .columns2,
+.container .columns3,
+.container .columns4,
+.container .columns5,
+.container .columns6,
+.container .columns7,
+.container .columns8, 
+.container .columns9, 
+.container .columns10, 
+.container .columns11, 
+.container .columns12, 
+.container .columns13,
+.container .columns14, 
+.container .columns15, 
+.container .columns16 { width:100% }
+
+
+.clearfix:after,
+.container:after{
+ content:" ";
+ display:block;
+ overflow:hidden;
+ visibility:hidden;
+ width:0;
+ height: 0;
+ clear:both;	
+}
+
+.clearfix,
+.container{
+ zoom:1;		
+}
+
+
+/*==== LOGO ====*/
+.logo{
+  float:left;
+  color:#313131;
+  margin:1.8em 1.8em 0 0;
+}
+.logo a{
+   text-decoration:none;	
+}
+
+/*==== NAVIGATION ====*/
+
+a.nav-link{
+  position:absolute;
+  top:0;
+  right:1em;
+  background:#498AB6;
+  color:white; 
+  font-weight: bold;
+  text-decoration: none;
+  padding:.5em;
+  -moz-border-radius: 0 0 2em 2em;
+  -webkit-border-radius: 0 0 2em 2em;
+  -o-border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2em 2em;
+}
+
+nav[role="primary"] ul{
+  list-style:none;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+ nav[role="primary"] ul li a{
+  text-decoration:none;
+  font-weight: bold;
+  background:#444;
+  display:block;
+  padding:0.75em;
+  border-bottom:1px solid #999;
+  color:#f7f7f7;
+ }
+
+ nav[role="primary"] ul li:last-child a{
+  border-bottom:none;	 
+ }
+ 
+ nav[role="primary"] ul li a:hover{
+	background:#498AB6;	
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+      border-radius: 5px;
+ }
+
+ 
+.row.container.banner{
+   width:100%;
+ }
+
+
+.row .featured_section{ 
+ padding:2em 0 0;
+ margin-bottom:1em;
+}	
+
+section{
+  float:left;
+  margin-top: 1%;
+}
+
+section:last-child{
+
+  margin-top: 1%;
+  margin-right:0;
+}
+
+.main_footer{
+  margin-top:1em;
+}
+                                          
+/* END BASE STYLES */
+
+
+/*======MEDIA QUERIES======*/
+
+@media only screen and (min-width: 600px){
+  
+  body:after{
+     content:'min-width 600px(medium displays)';
+     display:block;
+     width:100%;
+     padding:1%;
+     position:fixed;
+     bottom:5%;
+     background: blue;
+     color:#fff;
+     font-size:200%;
+     text-align: center;  
+  }
+
+ a.nav-link{
+  display:none;
+ }
+ 
+  nav[role="primary"] ul{
+    list-style:none;
+    position:relative;
+  }
+  nav[role="primary"] ul li a{
+     text-decoration:none;
+     color:#444;
+     background:none;
+     border-bottom:none;
+     float:left;
+     margin-top:1em;
+   }
+
+   .main_content{ 
+     float: left;  
+     padding-right: 1%;      
+     width: 81.25%; 
+    } 
+
+   .sidebar{ 
+     float:right;
+     padding-left: 1%;
+     width:18.75%; 
+   }
+
+   section{
+     width: 31.75%;
+     margin-right: 2.3%;
+   }
+    section.last{
+     margin: 0;
+     padding: 0;
+     float: right;
+    }
+
+}
+   
+
+
+/* configure the width of his media query as need */
+@media only screen and (min-width: 980px){
+    
+   body:after{
+     content:'max-width 980px(large displays)';
+     display:block;
+     width:100%;
+     padding:1%;
+     position:fixed;
+     background:aqua;
+     color:#fff;
+     font-size:200%;
+     text-align: center;  
+     bottom:5%;
+   }
+  
+  .container{
+    max-width: 980px;
+  }
+
+}
+
+
+
+.lt-ie9 .container{ 
+    max-width:600px;
+ }
+
+@media only print{
+ 
+}
+
+
+/* GRID 
+   .container .columns1 { width:6.25% }
+   .container .columns2 { width:12.5% }
+   .container .columns3 { width:18.75% }
+   .container .columns4 { width:25% }
+   .container .columns5 { width:31.25% }
+   .container .columns6 { width:37.5% }
+   .container .columns7 { width:43.75% }
+   .container .columns8 { width:50% }
+   .container .columns9 { width:56.25%; }
+   .container .columns10 { width:62.5% }
+   .container .columns11 { width:68.75% }
+   .container .columns12 { width:75% }
+   .container .columns13 { width:81.25% }
+   .container .columns14 { width:87.5% }
+   .container .columns15 { width:93.75% }
+   .container .columns16 { width:100% }
+
+*/
+
+/*======END MEDIA QUERIES======*/
+
